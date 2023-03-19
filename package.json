@@ -5,14 +5,24 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-   
-    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js --ignore ../src",
+    
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlon7piri/railways_node_vista_corona.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marlon7piri/railways_node_vista_corona/issues"
+  },
+  "homepage": "https://github.com/marlon7piri/railways_node_vista_corona#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "date-fns": "^2.29.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.0.1",

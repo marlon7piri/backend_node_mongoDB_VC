@@ -1,9 +1,9 @@
-import app from "./app.js"
-import { PORT } from "./config.js";
-import getConnection from './bd.js';
+import app from "./app.js";
+import {PORT} from './config.js';
+import connectionDB from "./db.js";
 
-getConnection()
-app.listen(PORT,()=>{
 
-  console.log('Listening in port ',PORT);
-})
+connectionDB()
+app.listen(PORT, () => {
+  console.log("listening in port ,",PORT);
+});
